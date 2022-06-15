@@ -88,7 +88,7 @@ def SaveRadiances(wls,radiances_wl):
 	radiances_c=np.array([radiances_wl])
 	radiances_c=radiances_wl.T
 	suma = np.stack((wls_c,radiances_c),axis=1)
-	np.savetxt('MODTRAN.txt',suma,fmt='%.8f')
+	np.savetxt('MODTRAN.dat',suma,fmt='%.8f')
 	#print(tamaño)
 	return (wls, radiances_wl)
 
